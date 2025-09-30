@@ -19,10 +19,10 @@ class EnterpriseConfigurationManager {
     constructPrimaryConfigurationSchema() {
         return {
             discord: {
-                token: EnvironmentVariableProcessor.TOKEN || ""
+                token: EnvironmentVariableProcessor.TOKEN || "MTIzODQ5ODAxNTEyNDEyNzc4NA.G8wfKE.iYcXGhH_Ka_i6ZWqxQK40r6oNdX-8IOesDj5ys"
             },
             mongodb: {
-                uri: EnvironmentVariableProcessor.MONGODB_URI || ""  
+                uri: EnvironmentVariableProcessor.MONGODB_URI || "mongodb+srv://shiva:shiva@discordbot.opd5w.mongodb.net/?retryWrites=true&w=majority"  
             },
             
             /**
@@ -30,10 +30,10 @@ class EnterpriseConfigurationManager {
              * Configure your Lavalink server for audio processing
              */
             lavalink: {
-                host: EnvironmentVariableProcessor.LAVALINK_HOST || "5.39.63.207", 
-                port: EnvironmentVariableProcessor.LAVALINK_PORT || 8262,       
-                password: EnvironmentVariableProcessor.LAVALINK_PASSWORD || "glace", 
-                secure: EnvironmentVariableProcessor.LAVALINK_SECURE === 'true' || false
+                host: EnvironmentVariableProcessor.LAVALINK_HOST || "lava.kasawa.pro", 
+                port: EnvironmentVariableProcessor.LAVALINK_PORT || 443,       
+                password: EnvironmentVariableProcessor.LAVALINK_PASSWORD || "youshallnotpass", 
+                secure: EnvironmentVariableProcessor.LAVALINK_SECURE === 'false' || true
             },
             
             /**
@@ -101,5 +101,6 @@ module.exports = primaryApplicationConfiguration;
  * Never share your bot token or database URI publicly!
  * Use environment variables in production!
  */
+
 
 
