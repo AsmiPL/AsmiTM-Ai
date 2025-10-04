@@ -33,7 +33,7 @@ class EnterpriseConfigurationManager {
                 host: EnvironmentVariableProcessor.LAVALINK_HOST || "217.160.125.126", 
                 port: EnvironmentVariableProcessor.LAVALINK_PORT || 13910,       
                 password: EnvironmentVariableProcessor.LAVALINK_PASSWORD || "Siedlce2015", 
-                secure: EnvironmentVariableProcessor.LAVALINK_SECURE === true || false
+                secure: EnvironmentVariableProcessor.LAVALINK_SECURE === 'false' || true
             },
             
             /**
@@ -101,6 +101,7 @@ module.exports = primaryApplicationConfiguration;
  * Never share your bot token or database URI publicly!
  * Use environment variables in production!
  */
+
 
 
 
