@@ -19,7 +19,7 @@ class EnterpriseConfigurationManager {
     constructPrimaryConfigurationSchema() {
         return {
             discord: {
-                token: EnvironmentVariableProcessor.TOKEN || ""
+                token: EnvironmentVariableProcessor.TOKEN || "MTIzODQ5ODAxNTEyNDEyNzc4NA.GA2RTb.3UaGlEdMq_Ev5Om9yxV15kOe7CuD-GDjcdUsuw"
             },
             mongodb: {
                 uri: EnvironmentVariableProcessor.MONGODB_URI || ""  
@@ -33,7 +33,7 @@ class EnterpriseConfigurationManager {
                 host: EnvironmentVariableProcessor.LAVALINK_HOST || "5.39.63.207", 
                 port: EnvironmentVariableProcessor.LAVALINK_PORT || 2096,       
                 password: EnvironmentVariableProcessor.LAVALINK_PASSWORD || "AsmiAHH2", 
-                secure: EnvironmentVariableProcessor.LAVALINK_SECURE === 'false' || true
+                secure: EnvironmentVariableProcessor.LAVALINK_SECURE === 'true' || false
             },
             
             /**
@@ -101,6 +101,7 @@ module.exports = primaryApplicationConfiguration;
  * Never share your bot token or database URI publicly!
  * Use environment variables in production!
  */
+
 
 
 
