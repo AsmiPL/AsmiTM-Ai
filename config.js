@@ -22,7 +22,7 @@ class EnterpriseConfigurationManager {
                 token: EnvironmentVariableProcessor.TOKEN || ""
             },
             mongodb: {
-                uri: EnvironmentVariableProcessor.MONGODB_URI || "mongodb+srv://shiva:shiva@discordbot.opd5w.mongodb.net/?retryWrites=true&w=majority"  
+                uri: EnvironmentVariableProcessor.MONGODB_URI || ""  
             },
             
             /**
@@ -30,9 +30,9 @@ class EnterpriseConfigurationManager {
              * Configure your Lavalink server for audio processing
              */
             lavalink: {
-                host: EnvironmentVariableProcessor.LAVALINK_HOST || "192.99.10.133", 
-                port: EnvironmentVariableProcessor.LAVALINK_PORT || 5140,       
-                password: EnvironmentVariableProcessor.LAVALINK_PASSWORD || "friston", 
+                host: EnvironmentVariableProcessor.LAVALINK_HOST || "87.106.62.92", 
+                port: EnvironmentVariableProcessor.LAVALINK_PORT || 11642,       
+                password: EnvironmentVariableProcessor.LAVALINK_PASSWORD || "glace", 
                 secure: EnvironmentVariableProcessor.LAVALINK_SECURE === 'false' || true
             },
             
@@ -101,6 +101,7 @@ module.exports = primaryApplicationConfiguration;
  * Never share your bot token or database URI publicly!
  * Use environment variables in production!
  */
+
 
 
 
